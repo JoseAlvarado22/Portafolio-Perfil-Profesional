@@ -1,0 +1,13 @@
+.contenedor-pie-pagina{
+    color: white;
+    font-size: clamp(8px, 1.5vw, 12px);
+    padding: 10px 0px;
+    width: 100%;
+    padding-left: 10px;
+}
+
+@media (min-width: 650px){
+    .contenedor-pie-pagina{
+        text-align: center;
+    }
+}

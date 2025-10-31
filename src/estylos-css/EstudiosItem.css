@@ -1,0 +1,109 @@
+.conteiner-item{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding-left: 20px;
+}
+
+.item-estudios{
+    display: flex;
+    gap: 5px;
+}
+
+.item-estudios .item{
+    width: 3vw;
+    align-self: flex-start;
+    padding-top: 5px;
+    max-width: 10px;
+}
+
+.item-estudios p{
+    font-size: clamp(14px, 2vw, 20px);
+}
+
+.item-drive{
+    padding-left: 10px;
+}
+
+.drive{
+    min-width: 80px;
+    width: 25vw;
+    animation: movimiento 1s infinite alternate;
+    cursor: pointer;
+    max-width: 100px;
+}
+
+.drive:hover{
+    filter: drop-shadow(0 0 5px rgb(255, 0, 0));
+}
+
+@keyframes movimiento{
+    0%{
+        transform: translateY(0px);
+    }
+
+    100%{
+        transform: translateY(-5px);
+    }
+}
+
+@media (min-width: 650px){
+    .conteiner-item{
+        width: 40vw;
+        max-width: 300px;
+        min-height: 134px;
+        background-color: #332f2fe3;
+        padding: 20px 15px;
+        border-radius: 20px;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        filter: drop-shadow(0 0 5px rgba(255, 255, 255, 0.597));
+        position: relative;
+    }
+
+    .conteiner-item::before{
+        content: 'Ver Certificado';
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        color: black;
+        background-color: rgb(255, 255, 255);
+        top: 0;
+        left: 0;
+        border-radius: 20px;
+        font-size: clamp(22px, 2vw, 25px);
+        font-weight: 800;
+        text-decoration: underline;
+        transform: translate(100%);
+        transform: scale(0) rotate(0deg);
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .conteiner-item:hover::before{
+        transform: translate(0);
+        transform: scale(1) rotate(360deg);
+        transition: transform 0.4s;
+    }
+
+    .item-estudios .item{
+        display: none;
+    }
+
+    .item-estudios p{
+        font-size: clamp(18px, 2vw, 20px);
+    }
+
+    .item-drive{
+        display: none;
+    }
+}
+
+@media (min-width: 900px){
+    .conteiner-item{
+        min-height: 140px
+    }
+}

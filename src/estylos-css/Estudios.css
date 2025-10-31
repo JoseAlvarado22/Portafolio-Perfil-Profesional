@@ -1,0 +1,34 @@
+.container-estudios{
+    padding: 30px 15px 0 10px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+    max-width: 1200px;
+    padding-top: 50px;
+    padding-bottom: 30px;
+}
+
+.contenedor-certificados{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+@media (min-width: 650px){
+
+    .container-estudios{
+        justify-content: center;
+        align-items: center;
+        padding-right: 0;
+    }
+
+    .contenedor-certificados{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+}

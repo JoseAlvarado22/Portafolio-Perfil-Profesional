@@ -1,0 +1,52 @@
+.container-tecnologias-item{
+    color: white;
+    padding-left: 20px;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.container-tecnologias-item h3{
+    margin-bottom: 10px;
+}
+
+.contenedor-imagen .imagen{
+    height: 7vw;
+    min-height: 40px;
+    max-height: 65px;
+}
+
+.contenedor-barra .barra{
+    min-width: 180px;
+    width: 50vw;
+    max-width: 250px;
+}
+
+@media (min-width: 650px){
+    .container-tecnologias-item{
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media (min-width: 900px){
+    /* .container-tecnologias-item:nth-child(1){
+        grid-area: tec1;
+    }
+
+    .container-tecnologias-item:nth-child(2){
+        grid-area: tec2;
+    }
+
+    .container-tecnologias-item:nth-child(3){
+        grid-area: tec3;
+    }
+
+    .container-tecnologias-item:nth-child(4){
+        grid-area: tec4;
+    }
+
+    .container-tecnologias-item:nth-child(5){
+        grid-area: tec5;
+    } */
+}
