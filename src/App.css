@@ -1,14 +1,27 @@
 :root{
-    --color-fondo-primario: linear-gradient(
+    --color-fondo-primario-modoOscuro: linear-gradient(
         180deg,
         rgba(142,14,0,1) 0%,
         rgba(31,28,24,1) 100%
     );
-    --color-fondo-segundario: linear-gradient(
+    --color-fondo-segundario-modoOscuro: linear-gradient(
         0deg,
         rgba(142,14,0,1) 0%,
         rgba(31,28,24,1) 100%
     );
+
+    --color-fondo-primario-modoClaro: linear-gradient(
+        180deg,
+        rgba(255,255,255,1) 0%,
+        rgb(131, 131, 131) 100%
+    );
+    --color-fondo-segundario-modoClaro: linear-gradient(
+        0deg,
+        rgba(255,255,255,1) 0%,
+        rgb(131, 131, 131) 100%
+    );
+
+
 }
 
 *{
@@ -24,14 +37,20 @@
 }
 
 .header{
-    background-color: rgba(142, 14, 0, 0.938);
     position: fixed;
     width: 100%;
     z-index: 9999;
 }
 
+.header-modo-claro{
+    background-color: rgba(73, 72, 72, 0.882);
+}
+
+.header-modo-oscuro{
+    background-color: rgba(138, 18, 18, 0.882);
+}
+
 .main{
-    background: var(--color-fondo-primario);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -39,7 +58,6 @@
 }
 
 .seccion-estudios{
-    background: var(--color-fondo-segundario);
     display: flex;
     flex-direction: column;
     padding: 0 10px;
@@ -47,7 +65,6 @@
 }
 
 .seccion-tecnoligias{
-    background: var(--color-fondo-primario);
     display: flex;
     flex-direction: column;
     padding: 0 10px;
@@ -55,16 +72,37 @@
 }
 
 .seccion-contacto{
-    background: var(--color-fondo-segundario);
+    background: var(--color-fondo-segundario-modoOscuro);
     display: flex;
     flex-direction: column;
     padding: 0 10px;
     align-items: center;
 }
 
+
 .footer{
-    background: var(--color-fondo-primario);
+    background: var(--color-fondo-primario-modoOscuro);
     display: flex;
     padding: 0 10px;
     align-items: center;
 }
+
+.modo-oscuro-primario{
+    background: var(--color-fondo-primario-modoOscuro);
+
+}
+
+.modo-claro-primario{
+    background: var(--color-fondo-primario-modoClaro);
+}
+
+.modo-oscuro-segundario{
+    background: var(--color-fondo-segundario-modoOscuro);
+
+}
+
+.modo-claro-segundario{
+    background: var(--color-fondo-segundario-modoClaro);
+}
+
+

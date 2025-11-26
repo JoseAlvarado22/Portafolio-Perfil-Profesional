@@ -1,11 +1,10 @@
 .container-tecnologias-item{
-    color: white;
+    
     padding-left: 20px;
     display: flex;
     flex-direction: column;
     
 }
-
 .container-tecnologias-item h3{
     margin-bottom: 10px;
 }

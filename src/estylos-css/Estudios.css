@@ -1,6 +1,5 @@
 .container-estudios{
     padding: 30px 15px 0 10px;
-    color: white;
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -8,6 +7,14 @@
     max-width: 1200px;
     padding-top: 50px;
     padding-bottom: 30px;
+}
+
+.container-estudios-modo-claro{
+    color: rgb(0, 0, 0);
+}
+
+.container-estudios-modo-oscuro{
+    color: white;
 }
 
 .contenedor-certificados{

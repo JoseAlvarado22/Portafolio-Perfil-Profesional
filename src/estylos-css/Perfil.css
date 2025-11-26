@@ -1,11 +1,18 @@
 .seccion-perfil{
-    color: white;
     padding-top: 50px;
     display: flex;
     flex-direction: column;
     width: 100%;
     max-width: 1200px;
     padding-left: 10px;
+}
+
+.seccion-perfil-modo-oscuro{
+    color: rgb(255, 255, 255);
+}
+
+.seccion-perfil-modo-claro{
+    color: black;
 }
 
 
@@ -25,7 +32,14 @@
     object-fit: cover;
     border-radius: 70px;
     padding: 20px 0px 10px 0px;
+}
+
+.perfil-modo-oscuro{
     filter: drop-shadow(0 0 5px rgba(255, 255, 255, 0.597));
+}
+
+.perfil-modo-claro{
+    filter: drop-shadow(0 0 5px rgb(0, 0, 0));
 }
 
 .container-img-nombre h1{
@@ -69,6 +83,14 @@
 
 .iconos:hover{
     filter: drop-shadow(0 0 5px rgb(255, 0, 0));
+}
+
+.iconos-modo-claro{
+    filter: invert(1);
+}
+
+.iconos-modo-claro:hover{
+    filter: drop-shadow(0 0 5px rgb(88, 88, 88));
 }
 
 /* .icono-cv{

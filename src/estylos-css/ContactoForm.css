@@ -1,6 +1,5 @@
 .contenedor-formulario{
     margin-top: 20px;
-    background-color: #332f2fe3;
     border-radius: 20px;
     padding: 15px 15px;
     display: flex;
@@ -8,8 +7,17 @@
     width: 80vw;
     min-width: 214px;
     max-width: 540px;
-    filter: drop-shadow(0 0 5px rgba(255, 255, 255, 0.597));
     height: 100%;
+}
+
+.contenedor-formulario-modo-claro{
+    background-color: #ffffffe3;
+    filter: drop-shadow(0 0 5px rgba(0, 0, 0, 0.597));
+}
+
+.contenedor-formulario-modo-oscuro{
+    background-color: #332f2fe3;
+    filter: drop-shadow(0 0 5px rgba(255, 255, 255, 0.597));
 }
 
 .formulario{
@@ -30,6 +38,7 @@ input{
     border-radius: 5px;
     cursor: pointer;
     max-width: 360px;
+    background-color: white;
 }
 
 #motivo{
@@ -41,6 +50,7 @@ input{
     border-radius: 5px;
     cursor: pointer;
     max-width: 360px;
+    background-color: white;
 }
 
 label{
@@ -59,6 +69,7 @@ label{
     width: 25%;
     min-width: 75px;
     margin-top: 15px;
+    border: 1px solid black;
 }
 
 .enviar:hover{
@@ -94,5 +105,11 @@ label{
         width: 35%;
         align-self: center;
         font-size: clamp(14px, 4vw, 14px);
+    }
+}
+
+@media (min-width: 1000px){
+    .contenedor-formulario{
+        width: 85%;
     }
 }

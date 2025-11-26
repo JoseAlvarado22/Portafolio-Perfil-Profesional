@@ -1,5 +1,4 @@
 .container-nav{
-    background-color: rgba(100,44,28,0.3);
     min-height: 40px;
 }
 
@@ -18,13 +17,16 @@
     display: none;
 }
 
+.icono-modo-oscuro-claro{
+    width: 20px;
+}
+
 @media (min-width: 650px) {
 
     .container-nav{
         display: flex;
         justify-content: center;
         align-items: center;
-        background-color: rgba(100,44,28,0.3);
     }
 
     .imagen-menu{

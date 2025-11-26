@@ -1,5 +1,4 @@
 .container-tecnologias{
-    color: white;
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -9,6 +8,15 @@
     padding-left: 10px;
     padding-top: 50px;
 }
+
+.container-tecnologias-modo-claro{
+    color: black;
+}
+
+.container-tecnologias-modo-oscuro{
+    color: white;
+}
+
 
 .contenedor-componentes-tec{
     display: flex;

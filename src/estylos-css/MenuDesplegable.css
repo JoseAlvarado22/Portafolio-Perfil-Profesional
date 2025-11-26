@@ -1,9 +1,21 @@
 .contenedor-menu-desplegable{
     display: flex;
-    justify-content: right;
+    justify-content: space-between;
+    align-items: center;
     padding-right: 10px;
     position: relative;
     max-height: 42.2px;
+}
+
+.selector-lenguaje{
+    cursor: pointer;
+    margin-left: 10px;
+    width: 50px;
+    background-color: rgba(0, 0, 0, 0.285);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 0 2px;
 }
 
 .hambuerguesa{
